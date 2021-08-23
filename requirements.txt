@@ -1,6 +1,7 @@
 autopep8==1.5.7
 click==8.0.1
 Flask==2.0.1
+Flask-WTF==0.15.1
 importlib-metadata==4.6.4
 itsdangerous==2.0.1
 Jinja2==3.0.1
@@ -10,4 +11,5 @@ python-dotenv==0.19.0
 toml==0.10.2
 typing-extensions==3.10.0.0
 Werkzeug==2.0.1
+WTForms==2.3.3
 zipp==3.5.0
