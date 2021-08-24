@@ -1,3 +1,6 @@
 venv/
 __pycache__/
 app/__pycache__/
+app.db
+migrations/__pycache__
+migrations/versions/__pycache__
