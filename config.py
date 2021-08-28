@@ -14,6 +14,7 @@ class Config(object):
         'MAIL_USERNAME')
     MAIL_PASSWORD = os.environ.get('MAIL_PASSWORD')
     ADMINS = ['microblogger.flask@gmail.com']
+    POSTS_PER_PAGE = 3
 
 
 '''
