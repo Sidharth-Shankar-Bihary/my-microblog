@@ -18,6 +18,7 @@ class Config(object):
     LANGUAGES = ['en', 'es']
     ELASTICSEARCH_URL = os.environ.get(
         'ELASTICSEARCH_URL') or 'http://localhost:9200'
+    LOG_TO_STDOUT = os.environ.get('LOG_TO_STDOUT')
 
 
 '''

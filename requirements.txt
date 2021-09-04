@@ -18,12 +18,14 @@ Flask-Moment==1.0.2
 Flask-SQLAlchemy==2.5.1
 Flask-WTF==0.15.1
 greenlet==1.1.1
+gunicorn==20.1.0
 idna==3.2
 importlib-metadata==4.6.4
 itsdangerous==2.0.1
 Jinja2==3.0.1
 Mako==1.1.5
 MarkupSafe==2.0.1
+psycopg2-binary==2.9.1
 pycodestyle==2.7.0
 PyJWT==2.1.0
 python-dateutil==2.8.2
