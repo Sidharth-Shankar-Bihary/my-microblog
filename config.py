@@ -14,7 +14,10 @@ class Config(object):
         'MAIL_USERNAME')
     MAIL_PASSWORD = os.environ.get('MAIL_PASSWORD')
     ADMINS = ['microblogger.flask@gmail.com']
-    POSTS_PER_PAGE = 3
+    POSTS_PER_PAGE = 5
+    LANGUAGES = ['en', 'es']
+    ELASTICSEARCH_URL = os.environ.get(
+        'ELASTICSEARCH_URL') or 'http://localhost:9200'
 
 
 '''
