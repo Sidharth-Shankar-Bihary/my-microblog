@@ -17,7 +17,7 @@ class Config(object):
     POSTS_PER_PAGE = 5
     LANGUAGES = ['en', 'es']
     ELASTICSEARCH_URL = os.environ.get(
-        'ELASTICSEARCH_URL') or 'http://localhost:9200'
+        'ELASTICSEARCH_URL') or None
     LOG_TO_STDOUT = os.environ.get('LOG_TO_STDOUT')
 
 
