@@ -6,6 +6,7 @@ from app import login
 from hashlib import md5
 from time import time
 import jwt
+import json
 from app import app
 from app.search import add_to_index, remove_from_index, query_index
 
@@ -118,8 +119,9 @@ class User(UserMixin, db.Model):
     def verify_reset_password_token(token):
         try:
             id = jwt.decode(token, app.config['SECRET_KEY'],
-                            algorithm='HS256')['reset_password']
-        except:
+                            algorithms=['HS256'])['reset_password']
+        except Exception as e:
+            print(e)
             return
         return User.query.get(id)
 
