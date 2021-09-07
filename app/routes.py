@@ -228,3 +228,10 @@ def search():
     prev_url = url_for(search, q=g.search_form.q.data,
                        page=page-1) if page > 1 else None
     return render_template('search.html', title='Search', posts=posts, next_url=next_url, prev_url=prev_url)
+
+
+@app.route('/user/<username>/popup')
+@login_required
+def user_popup(username):
+    user = User.query.filter_by(username=username).first_or_404()
+    return render_template('user_popup.html', user=user)
