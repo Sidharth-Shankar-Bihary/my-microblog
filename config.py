@@ -28,5 +28,5 @@ export MAIL_SERVER=smtp.googlemail.com
 export MAIL_PORT=587
 export MAIL_USE_TLS=1
 export MAIL_USERNAME='microblogger.flask@gmail.com'
-export MAIL_PASSWORD='Sidmicroblogger@123'
+export MAIL_PASSWORD='xxxx'
 '''
